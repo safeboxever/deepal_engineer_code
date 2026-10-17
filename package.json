@@ -1,0 +1,16 @@
+{
+  "name": "mazda6e-code-generator",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "release": "npm install && vite build"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0",
+    "vite-plugin-singlefile": "^2.3.0"
+  }
+}

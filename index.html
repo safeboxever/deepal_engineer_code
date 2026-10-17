@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mazda 6E & Deepal S07 Codes</title>
+    <meta name="description" content="Generate the Mazda 6E (EZ-6) and Deepal S07 engineering menu code from the last 4 digits of your VIN and the date (China time)." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔑</text></svg>" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Mazda 6E (EZ-6) &amp; Deepal S07 <span>Engineering Code</span></h1>
+        <p class="subtitle">Generates the engineering-menu password from the last 4 digits of your VIN and the date in China.</p>
+        <div class="warning" role="note">
+          <strong>⚠️ Use at your own risk.</strong>
+          Too many wrong attempts may block the password prompt. Don't go over the attempt limit: try the main code first, and wait before trying more.
+        </div>
+      </header>
+
+      <form id="form" class="card" novalidate>
+        <label for="vin">Last 4 digits of VIN</label>
+        <input id="vin" inputmode="numeric" maxlength="4" placeholder="e.g. 3506" autocomplete="off" />
+
+        <label for="date">Date (China time)</label>
+        <input id="date" type="date" />
+
+        <button type="submit">Generate code</button>
+        <p id="error" class="error" role="alert"></p>
+      </form>
+
+      <section id="results" hidden></section>
+
+      <section class="card howto">
+        <h2>How to use</h2>
+        <ol>
+          <li>Enter the last 4 digits of your VIN. The date defaults to today in China time, which is the time the car uses.</li>
+          <li>Open the engineering-menu password prompt on the head unit. On the Deepal S07, you open it by tapping the clock in the top-right corner 10 times. The Mazda 6E (EZ-6) should work the same way.</li>
+          <li>Enter the <strong>main code</strong>. If it fails, try the alternatives, then the codes for the day before and the day after. Try only a few codes at a time, because too many wrong attempts may block the prompt.</li>
+        </ol>
+        <p class="note">Codes are valid for one day in China time. Use at your own risk. Changing engineering settings can affect your vehicle and its warranty.</p>
+      </section>
+
+      <footer>Runs entirely in your browser. Nothing is sent anywhere.</footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
